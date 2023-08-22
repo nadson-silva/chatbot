@@ -41,9 +41,3 @@ export async function callApi(messages, openai) {
         console.error(error);
     }
 }
-
-// module.exports = {
-//     MongoConnect,
-//     Openai
-// };
-

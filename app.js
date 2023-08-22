@@ -201,7 +201,8 @@ app.post('/help', (req, res) => { });  // TODO -- Code this route
 
 
 
-app.listen(port, () => {
+app.listen(port, async () => {
+    await MongoConnect();
     console.log(`Listening on port 3000!` +
         `\nUse "/help" to see the routes.`);
-})
+}) 
